@@ -7,6 +7,19 @@ Home Assistant add-on that runs the Tesla Vehicle Command Protocol (VCP) HTTP pr
 
 ---
 
+## Setup order
+
+This add-on is one part of a two-component setup. Complete the steps in this order:
+
+1. **[Add-on] Steps 2-3** — generate key pair + host public key on GitHub Pages
+2. **[Integration]** — create your Tesla Developer App (you now know your domain) → [integration README](https://github.com/Briochorama/tesla-smart-routes)
+3. **[Add-on] Steps 1, 4-7** — install add-on, register domain, copy key, pair vehicle, start
+4. **[Integration]** — install and configure the integration → [integration README](https://github.com/Briochorama/tesla-smart-routes)
+
+> If you arrived here directly: do Steps 2-3 below first, then follow the [integration README](https://github.com/Briochorama/tesla-smart-routes) to create your Tesla Developer App, then come back here for Steps 1 and 4-7.
+
+---
+
 ## Why is this needed?
 
 Since 2023, Tesla requires all vehicle commands to be cryptographically signed with an EC private key that you register with Tesla. This proxy sits between Home Assistant and the Tesla Fleet API. It receives unsigned commands and signs them before forwarding.
