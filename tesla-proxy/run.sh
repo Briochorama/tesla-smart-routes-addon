@@ -2,11 +2,11 @@
 set -e
 
 DATA=/data
-KEY_FILE=/config/tesla_nav/private.pem
+KEY_FILE=/config/tesla_smart_routes/private.pem
 
 if [ ! -f "$KEY_FILE" ]; then
     echo "[tesla-proxy] ERROR: $KEY_FILE not found."
-    echo "[tesla-proxy] Copy your Tesla EC private key to P:\\tesla_nav\\private.pem (HAOS config share)"
+    echo "[tesla-proxy] Copy your Tesla EC private key to P:\\tesla_smart_routes\\private.pem (HAOS config share)"
     exit 1
 fi
 
