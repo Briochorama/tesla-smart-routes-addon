@@ -1,0 +1,3 @@
+# HA add-on local artifacts
+*.log
+.DS_Store
